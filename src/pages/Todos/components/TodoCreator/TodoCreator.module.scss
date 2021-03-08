@@ -1,0 +1,16 @@
+.TodoCreator {
+  display: flex;
+
+  & .addButton {
+    background-color: #4b85a8;
+    width: 40px;
+    text-align: center;
+    border-radius: 2px;
+    color: aliceblue;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(#4b85a8, 20%);
+    }
+  }
+}

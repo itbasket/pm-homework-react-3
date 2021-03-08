@@ -1,0 +1,45 @@
+.CardEditor {
+  position: relative;
+
+  & textarea {
+    color: #fff;
+    background-color: #393e46;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+
+    &:focus {
+      border: 1px solid #00adb5;
+    }
+  }
+
+  & .button {
+    display: inline-block;
+    height: 25px;
+    width: 50px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 25px;
+    font-size: 11px;
+    margin-right: 10px;
+
+    &.confirmButton {
+      background-color: #00adb5;
+
+      &:hover {
+        background-color: darken(#00adb5, 10%);
+      }
+    }
+
+    &.cancelButton {
+      background-color: #5b5b5b;
+
+      &:hover {
+        background-color: darken(#5b5b5b, 10%);
+      }
+    }
+  }
+}

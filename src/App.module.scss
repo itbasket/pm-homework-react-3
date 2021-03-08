@@ -1,0 +1,12 @@
+.App {
+
+  & .nav {
+    width: 20%;
+    margin: 0 auto;
+
+    & .activeLink {
+      font-weight: bold;
+    }
+  }
+}
+

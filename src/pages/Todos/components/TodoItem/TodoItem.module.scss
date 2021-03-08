@@ -1,0 +1,33 @@
+.TodoItem {
+  display: flex;
+  justify-content: space-between;
+  background-color: #5b5b5b;
+  width: 60%;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 10px;
+  line-height: 40px;
+
+  &.completed {
+    background-color: #1E5631;
+  }
+
+  & .idBlock,
+  & .completeBlock {
+    width: 10%;
+    text-align: center;
+  }
+
+  & .titleBlock {
+    width: 80%;
+
+    & span {
+      font-weight: bold;
+      background-color: #e1b200;
+    }
+  }
+
+  & svg {
+    cursor: pointer;
+  }
+}

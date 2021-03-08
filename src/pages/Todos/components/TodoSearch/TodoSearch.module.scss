@@ -1,0 +1,16 @@
+.TodoSearch {
+  display: flex;
+
+  & .searchButton {
+    background-color: #d98100;
+    width: 60px;
+    text-align: center;
+    border-radius: 2px;
+    color: aliceblue;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(#d98100, 20%);
+    }
+  }
+}

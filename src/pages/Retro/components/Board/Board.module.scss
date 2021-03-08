@@ -1,0 +1,33 @@
+.Board {
+  background-color: #222831;
+  flex-basis: 400px;
+  padding: 10px;
+  border-radius: 5px;
+
+  &.green {
+    background-color: #1E5631;
+  }
+
+  &.red {
+    background-color: #C2262F;
+  }
+
+  &.yellow {
+    background-color: #FFA701;
+  }
+
+  & .addButton {
+    height: 30px;
+    width: 90px;
+    background-color: #00adb5;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 10px;
+
+    &:hover {
+      background-color: darken(#00adb5, 10%);
+    }
+  }
+}
