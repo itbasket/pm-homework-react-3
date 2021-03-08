@@ -15,7 +15,10 @@ const TodoItem = ({ data, searchText, onComplete }) => {
       <div className={styles.idBlock}>{data.id}</div>
       <div className={styles.titleBlock} dangerouslySetInnerHTML={{__html: title}}></div>
       <div className={styles.completeBlock}>
-        <FontAwesomeIcon icon={faTimesCircle} onClick={() => onComplete(data.id)} />
+        {!data.completed
+          ? <FontAwesomeIcon icon={faTimesCircle} onClick={() => onComplete(data.id)} />
+          : ''
+        }
       </div>
     </div>
   );
